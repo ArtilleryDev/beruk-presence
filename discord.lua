@@ -10,5 +10,11 @@ Citizen.CreateThread(function()
         SetDiscordRichPresenceAssetText("BERUK SERVER")
         SetDiscordRichPresenceAssetSmall('logo')
         SetDiscordRichPresenceAssetSmallText(" "..name)
+        
+        SetDiscordRichPresenceAction(0, "Connect", "fivem://connect/")
+
+        Citizen.Wait(60000)
+    end
+end)
     end
 end)
